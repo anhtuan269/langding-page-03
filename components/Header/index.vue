@@ -2,10 +2,10 @@
   <div class="flex justify-between items-center">
     <div class="block">
       <nuxt-link to="/">
-        <img src="@/static/image/logo.png" alt="" />
+        <img class="w-full" src="@/static/image/logo.png" alt="" />
       </nuxt-link>
     </div>
-    <ul class="md:flex item-center justify-between hidden">
+    <ul class="  hidden md:flex item-center justify-between">
       <li 
       v-for="(item, index) in menu " 
       :key="index"

@@ -2,7 +2,7 @@
   <div
     class="flex flex-col relative pt-5 overflow-x-hidden overflow-y-visible mb-10 xl:flex-row justify-between xl:pt-0 xl:px-10"
   >
-    <div class="right md:w-6/12 xl:pt-10">
+    <div class="right xl:w-6/12 xl:pt-10">
       <Header />
       <div class="my-10">
         <Heading />
@@ -12,9 +12,9 @@
       >
         İşlərimizlə tanış ol
       </button>
-      <div class="relative overflow-x-hidden">
+      <div class="relative xl:overflow-x-hidden">
         <h2
-          class="text-150 leading-150 font-bold text-opacity-5 text-rgba relative right-10 md:leading-l-272 md:text-200 md:right-20"
+          class="text-150 leading-150 font-bold text-opacity-5 text-rgba relative right-10 md:leading-l-272 md:text-200 xl:right-20"
         >
           Rəqəmsal
         </h2>
