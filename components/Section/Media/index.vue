@@ -1,37 +1,45 @@
 <template>
-  <div class="media">
+  <div class="media py-16 text-center ">
     <div class="title">
-      <p>
-        <span>RƏQƏMSAL</span>
+      <p class="text-12">
+        <span class="text-12 text-new-blue">RƏQƏMSAL</span>
         · MEDİA
       </p>
     </div>
     <Heading
     :head="head" />
-    <div class="flex items-center justify-center">
-        <div class="card flex items-center justify-center">
+    <div class="flex flex-col items-center justify-center">
+        <div class="card flex items-center justify-center mt-10">
             <img src="@/static/image/icon-1.png" alt="">
-            <Heading 
+            <div class="text-left ml-5">
+              <Heading 
             :head="head1"
             /> 
+            </div>
         </div>
-          <div class="card flex items-center justify-center">
+          <div class="card flex items-center justify-center mt-10">
             <img src="@/static/image/icon-2.png" alt="">
-            <Heading 
+            <div class="text-left ml-5">
+              <Heading 
             :head="head2"
             /> 
+            </div>
         </div>
-          <div class="card flex items-center justify-center">
+          <div class="card flex items-center justify-center mt-10">
             <img src="@/static/image/icon-3.png" alt="">
-            <Heading 
+            <div class="text-left ml-5">
+              <Heading 
             :head="head3"
             /> 
+            </div>
         </div>
-          <div class="card flex items-center justify-center">
+          <div class="card flex items-center justify-center mt-10">
             <img src="@/static/image/icon-4.png" alt="">
-            <Heading 
+             <div class="text-left ml-5">
+              <Heading 
             :head="head4"
             /> 
+            </div>
         </div>
 
     </div>

@@ -2,6 +2,21 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screen: {
+      
+    },
+    boxShadow: {
+      sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+      DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+      md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+      lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+      xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+      '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+     '3xl': '0px 20px 50px rgba(29, 53, 71, 0.1), rgba(29, 53, 71, 0.1)',
+      inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+      none: 'none',
+    },
+
     extend: {
       backgroundImage: {
         'slide': 'url(@/static/image/background-slide.png)'
@@ -12,7 +27,8 @@ module.exports = {
         'purple':'#673E66'
       },
       textColor:{
-          'rgba':'#1D3547'
+          'rgba':'#1D3547',
+          'new-blue':'#0F69C9'
       },
 
       fontSize: {
@@ -30,18 +46,22 @@ module.exports = {
         '50': '3.125rem',
         '60':'3.75rem',
         '80':'5rem',
+        '150': '9rem',
         '200':'12.5rem'
       },
       lineHeight: {
         'l-80':'5rem',
         'l-68':'4.25rem',
         'l-34':'2.125rem',
+        'l-50': '3.5rem',
         'l-21':'1.3125rem',
         'l-27':'1.8125rem',
         'l-272':'272.8px',
         '42':'51.2px',
         '44':'44.2px',
-        '36':'36.4px'
+        '36':'36.4px',
+        '160': '160px',
+        'i':'130%'
       },
       borderColor: {
         'blue': '#0F69C9',

@@ -1,10 +1,16 @@
 <template>
   <div class="heading">
      <div class="big-header" v-show="head.big">
-          <h2 class="text-80 leading-l-80 font-bold">{{head.big_title}}</h2>
+          <h2 class="text-50 leading-l-68 md:text-80 md:leading-l-80 font-bold">
+              Tez 
+              <br>
+              və şəffaf 
+              <br>
+              reklam xidməti
+          </h2>
      </div>
      <div class="normal" v-show="head.normal">
-         <h2 class="text-50 leading-l-68 font-bold">{{head.normal_title}}</h2>
+         <h2 class=" font-bold text-34 md:text-50 md:leading-l-68 ">{{head.normal_title}}</h2>
      </div>
      <div class="title" v-show="head.title">
           <h2 class="text-50 leading-l-68 font-bold"> {{head.normal_title}} </h2>

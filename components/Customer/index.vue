@@ -1,6 +1,6 @@
 <template>
-  <ul class="bg-white px-32 py-16 flex items-center w-2xl justify-between shadow-sm border-2 rounded-xl">
-    <li v-for="(item, index) in customer" :key="index" class="w-1/4">
+  <ul class="bg-white px-16 grid grid-cols-2 gap-x-6 gap-y-6 py-8 shadow-3xl border-2 rounded-xl">
+    <li v-for="(item, index) in customer" :key="index">
       <img :src="item.src" alt="" />
     </li>
   </ul>
