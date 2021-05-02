@@ -1,14 +1,14 @@
 <template>
-  <div class="customer relative">
+  <div class="customer relative bg-orange py-16">
     <div class="bg-orange">
-        <img src="@/static/image/formatlar.png" alt="">
-      <div class="bg-white">
-        <h5 class="title">MÜŞTƏRİLƏRİMİZ</h5>
+        <img class="hidden" src="@/static/image/formatlar.png" alt="">
+      <div class="bg-white px-8 py-8">
+        <h5 class="title text-12 mb-4 text-new-blue">MÜŞTƏRİLƏRİMİZ</h5>
         <Heading :head="head" />
-        <Heading :head="head2"/>
+        <Heading class="mt-10" :head="head2"/>
       </div>
     </div>
-    <div class="">
+    <div class="mt-20">
          <SlideCustomer />
     </div>
   </div>

@@ -1,24 +1,32 @@
 <template>
-  <div class="formart relative">
-    <div class="flex flex-col items-cnter justify-center">
+  <div class="formart relative mt-16 py-16 text-center bg-gray-100 ">
+    <div class="title ">
+      <p class="text-12">
+        <span class="text-12 text-new-blue">RƏQƏMSAL</span>
+        · MEDİA
+      </p>
+    </div>
+    <Heading
+    :head="head5" />
+    <div class="flex flex-col items-center justify-center text-left mt-10 ">
       <img src="@/static/image/image.png" alt="" />
-      <div class="slide">
+      <div class="slide mt-10 z-50">
         <VueSlickCarousel v-bind="settings" ref="carousel" >
-          <div class="bg-white inline-block py-8 pl-10 border-l-4 border-red mb-10">
+          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-red mb-10">
             <Heading :head="head" />
           </div>
-          <div class="bg-white inline-block py-8 pl-10 border-l-4 border-blue mb-10">
+          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-blue mb-10">
             <Heading :head="head1" />
           </div>
-          <div class="bg-white inline-block py-8 pl-10 border-l-4 border-orange mb-10">
+          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-orange mb-10">
             <Heading :head="head2" />
           </div>
-          <div class="bg-white inline-block py-8 pl-10 border-l-4 border-blue mb-10">
+          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-blue mb-10">
             <Heading :head="head3" />
           </div>
         </VueSlickCarousel>
       </div>
-      <button @click="showNext" class="inline-block focus:outline-none">
+      <button @click="showNext" class="inline-block focus:outline-none mx-auto">
         <svg
           width="26"
           height="15"
@@ -33,8 +41,8 @@
         </svg>
       </button>
     </div>
-    <img src="@/static/image/blue-cycle.png" alt="">
-    <img src="@/static/image/cycle.png" alt="">
+    <img class="absolute top-0" src="@/static/image/blue-cycle.png" alt="">
+    <img class="absolute right-1 bottom-1/3 transform -translate-y-3 z-0" src="@/static/image/cycle.png" alt="">
   </div>
 </template>
 
@@ -53,6 +61,22 @@ export default {
   },
   data() {
     return {
+      head5: {
+        big: false,
+        normal: true,
+        title: false,
+        custom: false,
+        small: false,
+        technology: false,
+        big_title: "Tez və şəffaf reklam xidməti",
+        normal_title: "Formatlar",
+        logo: "/image/sign.png",
+        small_title: "",
+        content:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper magna sapien",
+        small_title: "Standart banner",
+        technology_title: "İnternet",
+      },
       settings: {
         dots: false,
         arrows: false,

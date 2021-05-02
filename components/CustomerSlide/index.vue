@@ -2,7 +2,7 @@
   <div class="slide relative max-w-358 mx-auto">
     <VueSlickCarousel v-bind="setting" ref="carousel" >
       <div class="relative w-338 mx-auto">
-        <img src="@/static/image/background-slide.png" alt="" />
+        <img class="mx-auto" src="@/static/image/background-slide.png" alt="" />
         <img
           class="absolute top-1/4 transform -translate-y-12 left-11"
           src="@/static/image/slide.png"
@@ -15,7 +15,7 @@
         />
       </div>
       <div class="relative w-338">
-        <img src="@/static/image/background-slide.png" alt="" />
+        <img class="mx-auto" src="@/static/image/background-slide.png" alt="" />
         <img
           class="absolute top-1/4 transform -translate-y-12 left-6"
           src="@/static/image/slide-2.png"
@@ -136,7 +136,6 @@ export default {
         dotsClass: "hidden",
         arrows: false,
         centerPadding: "10px",
-        fade:true,
         responsive: [
           {
             breakpoint: 480,
