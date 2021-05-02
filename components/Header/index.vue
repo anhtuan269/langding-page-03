@@ -22,35 +22,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    menu: {
-      type: Array,
-      require: true,
-      default() {
-        return [
-          {
-            id: 1,
-            page: 'XİDMƏTLƏR',
-            link:''
-          },
-          {
-            id: 2,
-            page: 'HAQQIMIZDA',
-            link:'HAQQIMIZDA'
+<script src="./script.js">
 
-          },
-          {
-            id: 3,
-            page: 'ƏLAQƏ',
-            link:'ƏLAQƏ'
-          },
-        ];
-      },
-    },
-  },
-};
 </script>
 
 <style>

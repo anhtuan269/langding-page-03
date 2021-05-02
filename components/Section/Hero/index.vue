@@ -20,7 +20,7 @@
         </h2>
       </div>
     </div>
-    <div class="left relative w-5/12">
+    <div class="left relative xl:w-5/12">
       <img class="w-full" src="@/static/image/hero-baner.png" alt="" />
       <img
         class="absolute top-1/4 left-1/4 transform -translate-x-1/4 -translate-y-16 md:-translate-y-12 md:-translate-x-24 xl:-translate-y-1/4 xl:-translate-x-1/4"
@@ -35,46 +35,8 @@
   </div>
 </template>
 
-<script>
-import Customer from "@/components/Customer";
-import Header from "@/components/Header";
-import Heading from "@/components/Heading";
-export default {
-  name: "Hero",
-  components: {
-    Heading,
-    Header,
-    Customer,
-  },
-  data() {
-    return {
-      settings: {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        edgeFriction: 0.35,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      },
-    };
-  },
-};
+<script src="./script.js">
+
 </script>
 
 <style>

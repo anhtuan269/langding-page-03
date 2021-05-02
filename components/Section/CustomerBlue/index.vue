@@ -1,46 +1,25 @@
 <template>
-  <div class="customer bg-blue py-16">
-    <CustomerSlide :blue="blue" :orange="orange" />
-    <div class="bg-white mt-16 ">
-    <h5 class="text-12 text-new-blue font-semibold pt-8 ml-12">PARTNYORLARIMIZ</h5>
-      <div class="pt-4 ml-12">
-        <Heading :head="head" />
+  <div class="customer bg-blue py-16 xl:bg-gray-100 relative">
+    <CustomerSlide class="relative xl:absolute xl:left-10 xl:-top-1/4 transform xl:translate-y-20 2xl:left-44 2xl:translate-x-5" :blue="blue" :orange="orange" />
+    <div class="bg-blue xl:px-10">
+      <div class="bg-white mt-16 xl:w-700 xl:h-400 xl:mt-0 xl:overflow-x-hidden xl:ml-auto">
+        <h5 class="text-12 text-new-blue font-semibold pt-8 ml-12">
+          PARTNYORLARIMIZ
+        </h5>
+        <div class="pt-4 ml-12 xl:w-7/12">
+          <Heading :head="head" />
+        </div>
+        <div class="col ">
+          <Customer  class="block md:hidden"/>
+           <Customer :settings="settings" class="hidden md:block" />
+        </div>
       </div>
-      <Customer :settings="settings" />
     </div>
   </div>
 </template>
 
-<script>
-import CustomerSlide from "@/components/CustomerSlide";
-export default {
-  name: "blue",
-  components: {
-    CustomerSlide,
-  },
-  data() {
-    return {
-      blue: true,
-      orange: false,
-      head: {
-        big: false,
-        title: true,
-        normal_title: "Saytlarımız",
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper magna sapien ",
-      },
-      settings: {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        edgeFriction: 0.35,
-        slidesToScroll: 1,
-        rows:2
-      }
-    };
-  },
-};
+<script src="./script.js">
+
 </script>
 
 <style>

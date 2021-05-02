@@ -9,7 +9,7 @@
     <Heading
     :head="head" />
     <div class="grid grid-cols-1  items-center justify-between xl:grid-cols-2 ">
-        <div class="card flex items-center  mt-10  w-600">
+        <div class="card flex items-center  mt-10  xl:w-600">
             <img src="@/static/image/icon-1.png" alt="">
             <div class="text-left ml-5 w-338">
               <Heading 
@@ -17,7 +17,7 @@
             /> 
             </div>
         </div>
-          <div class="card flex items-center  mt-10  w-600">
+          <div class="card flex items-center  mt-10  xl:w-600">
             <img src="@/static/image/icon-2.png" alt="">
             <div class="text-left ml-5">
               <Heading 
@@ -25,7 +25,7 @@
             /> 
             </div>
         </div>
-          <div class="card flex items-center  mt-10  w-600">
+          <div class="card flex items-center  mt-10  xl:w-600">
             <img src="@/static/image/icon-3.png" alt="">
             <div class="text-left ml-5">
               <Heading 
@@ -33,7 +33,7 @@
             /> 
             </div>
         </div>
-          <div class="card flex items-center  mt-10  w-600">
+          <div class="card flex items-center  mt-10  xl:w-600">
             <img src="@/static/image/icon-4.png" alt="">
              <div class="text-left ml-5">
               <Heading 
@@ -46,79 +46,8 @@
   </div>
 </template>
 
-<script>
-import Heading from "@/components/Heading";
-export default {
-  name: "media",
-  components: {
-    Heading,
-  },
-  data() {
-    return {
-      head: {
-        big: false,
-        normal: true,
-        title: false,
-        custom: false,
-        small: false,
-        technology: false,
-        big_title: "Tez və şəffaf reklam xidməti",
-        normal_title: "Reklam imkanları",
-        logo: "/image/sign.png",
-        small_title: "",
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper magna sapien",
-        small_title: "Standart banner",
-        technology_title: "İnternet",
-      },
-       head1: {
-        big: false,
-        normal: false,
-        title: false,
-        custom: false,
-        small: false,
-        technology: true,
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper magna sapien",
-        technology_title: "İnternet",
-      },
-       head2: {
-        big: false,
-        normal: false,
-        title: false,
-        custom: false,
-        small: false,
-        technology: true,
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper magna sapien",
-        technology_title: "LED Monitor",
-      },
-       head3: {
-        big: false,
-        normal: false,
-        title: false,
-        custom: false,
-        small: false,
-        technology: true,
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper magna sapien",
-        technology_title: "Mobil reklam",
-      },
-       head4: {
-        big: false,
-        normal: false,
-        title: false,
-        custom: false,
-        small: false,
-        technology: true,
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper magna sapien",
-        technology_title: "PR Reklam",
-      },
-      
-    };
-  },
-};
+<script src="./script.js">
+
 </script>
 
 <style>
