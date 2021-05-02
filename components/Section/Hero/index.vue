@@ -1,8 +1,8 @@
 <template>
   <div
-    class="flex flex-col relative pt-5 overflow-x-hidden overflow-y-visible mb-10"
+    class="flex flex-col relative pt-5 overflow-x-hidden overflow-y-visible mb-10 xl:flex-row justify-between xl:pt-0 xl:px-10"
   >
-    <div class="right">
+    <div class="right md:w-6/12 xl:pt-10">
       <Header />
       <div class="my-10">
         <Heading />
@@ -12,7 +12,7 @@
       >
         İşlərimizlə tanış ol
       </button>
-      <div class="relative">
+      <div class="relative overflow-x-hidden">
         <h2
           class="text-150 leading-150 font-bold text-opacity-5 text-rgba relative right-10 md:leading-l-272 md:text-200 md:right-20"
         >
@@ -20,17 +20,17 @@
         </h2>
       </div>
     </div>
-    <div class="left relative">
+    <div class="left relative w-5/12">
       <img class="w-full" src="@/static/image/hero-baner.png" alt="" />
       <img
-        class="absolute top-1/4 left-1/4 transform -translate-x-1/4 -translate-y-16 md:-translate-y-12 md:-translate-x-24"
+        class="absolute top-1/4 left-1/4 transform -translate-x-1/4 -translate-y-16 md:-translate-y-12 md:-translate-x-24 xl:-translate-y-1/4 xl:-translate-x-1/4"
         src="@/static/image/triangle.png"
         alt=""
       />
-    </div>
-    <div class="relative -top-5 md:-top-10">
-      <Customer class="block md:hidden" />
-      <Customer :settings="settings" class="hidden md:block" />
+      <div class="relative -top-5 md:-top-10  xl:right-100 ">
+        <Customer class="block md:hidden" />
+        <Customer :settings="settings" class="hidden md:block " />
+      </div>
     </div>
   </div>
 </template>
