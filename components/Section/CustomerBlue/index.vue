@@ -1,9 +1,11 @@
 <template>
-  <div class="customer">
+  <div class="customer bg-blue py-16">
     <CustomerSlide :blue="blue" :orange="orange" />
-    <div class="bg-blue">
-      <h5>PARTNYORLARIMIZ</h5>
-      <Heading :head="head" />
+    <div class="bg-white mt-16 ">
+    <h5 class="text-12 text-new-blue font-semibold pt-8 ml-12">PARTNYORLARIMIZ</h5>
+      <div class="pt-4 ml-12">
+        <Heading :head="head" />
+      </div>
       <Customer :customer="customer" />
     </div>
   </div>

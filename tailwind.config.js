@@ -30,7 +30,9 @@ module.exports = {
           'rgba':'#1D3547',
           'new-blue':'#0F69C9'
       },
-
+      zIndex :{
+        'a':'-1'
+      },
       fontSize: {
         '12': '0.75rem',
         '14': '0.875rem',

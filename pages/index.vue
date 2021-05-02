@@ -1,5 +1,5 @@
 <template>
- <div id="app" class="mx-10" >
+ <div id="app" class="px-10 bg-gray-100" >
    <Hero />
    <Media />
    <Customer />
