@@ -2,9 +2,6 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    screen: {
-      
-    },
     boxShadow: {
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
       DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
@@ -18,6 +15,7 @@ module.exports = {
     },
 
     extend: {
+     
       backgroundImage: {
         'slide': 'url(@/static/image/background-slide.png)'
       },
@@ -28,7 +26,8 @@ module.exports = {
       },
       textColor:{
           'rgba':'#1D3547',
-          'new-blue':'#0F69C9'
+          'new-blue':'#0F69C9',
+          'orange':'#F48F38'
       },
       zIndex :{
         'a':'-1'

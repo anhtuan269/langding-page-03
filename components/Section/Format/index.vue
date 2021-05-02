@@ -12,16 +12,16 @@
       <img src="@/static/image/image.png" alt="" />
       <div class="slide mt-10 z-50">
         <VueSlickCarousel v-bind="settings" ref="carousel" >
-          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-red mb-10">
+          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-red mb-10 md:py-8">
             <Heading :head="head" />
           </div>
-          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-blue mb-10">
+          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-blue mb-10 md:py-8">
             <Heading :head="head1" />
           </div>
-          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-orange mb-10">
+          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-orange mb-10 md:py-8">
             <Heading :head="head2" />
           </div>
-          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-blue mb-10">
+          <div class="bg-white inline-block py-4 pl-10 border-l-4 border-blue mb-10 md:py-8">
             <Heading :head="head3" />
           </div>
         </VueSlickCarousel>

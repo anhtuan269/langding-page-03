@@ -8,7 +8,7 @@
     </div>
     <Heading
     :head="head" />
-    <div class="flex flex-col items-center justify-center">
+    <div class="grid grid-cols-1  items-center justify-center ">
         <div class="card flex items-center justify-center mt-10">
             <img src="@/static/image/icon-1.png" alt="">
             <div class="text-left ml-5">
