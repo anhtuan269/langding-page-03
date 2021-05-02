@@ -11,6 +11,10 @@ module.exports = {
         'blue':'#0F69C9',
         'purple':'#673E66'
       },
+      textColor:{
+          'rgba':'#1D3547'
+      },
+
       fontSize: {
         '12': '0.75rem',
         '14': '0.875rem',
@@ -26,13 +30,15 @@ module.exports = {
         '50': '3.125rem',
         '60':'3.75rem',
         '80':'5rem',
+        '200':'12.5rem'
       },
       lineHeight: {
         'l-80':'5rem',
         'l-68':'4.25rem',
         'l-34':'2.125rem',
         'l-21':'1.3125rem',
-        'l-27':'2.8125rem',
+        'l-27':'1.8125rem',
+        'l-272':'272.8px',
         '42':'51.2px',
         '44':'44.2px',
         '36':'36.4px'
@@ -55,6 +61,10 @@ module.exports = {
       borderWidth: {
           '4':'4px'
       },
+      borderRadius: {
+        '20':'1.25rem'
+      },
+
       translate: {
         '1/7': '14.2857143%',
         '2/7': '28.5714286%',
@@ -66,7 +76,13 @@ module.exports = {
         '8/10': '-79%'
        },
        width: {
-         '338': '338px'
+         '338': '338px',
+         '400':'400px',
+         
+       },
+       height: {
+        '150':'150px',
+        '50': '50px'
        },
        maxWidth: {
          '480':'480px',

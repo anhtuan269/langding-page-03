@@ -1,15 +1,30 @@
 <template>
- <div id="app" class="bg-black">
-   <Slide />
+ <div id="app" >
+   <Hero />
+   <Media />
+   <Customer />
+   <Format />
+   <CustomerBlue />
+   <Data />
  </div>
 </template>
 
 <script>
-import Slide from '@/components/Customer-slide'
+import Customer from '@/components/Section/Customer'
+import CustomerBlue from '@/components/Section/CustomerBlue'
+import Data from '@/components/Section/Data'
+import Format from '@/components/Section/Format'
+import Hero from '@/components/Section/Hero'
+import Media from '@/components/Section/Media'
 export default {
 
   components:{
-    Slide
+    Customer,
+    CustomerBlue,
+    Format,
+    Data,
+    Hero,
+    Media
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="slide relative max-w-358 mx-auto">
-    <VueSlickCarousel v-bind="setting" ref="carousel">
+    <VueSlickCarousel v-bind="setting" ref="carousel" >
       <div class="relative w-338 mx-auto">
         <img src="@/static/image/background-slide.png" alt="" />
         <img
@@ -8,22 +8,13 @@
           src="@/static/image/slide.png"
           alt=""
         />
-        <img class="absolute bottom-28 left-28" src="@/static/image/sign.png" alt="" />
+        <img
+          class="absolute bottom-28 left-28"
+          src="@/static/image/sign.png"
+          alt=""
+        />
       </div>
       <div class="relative w-338">
-        <img src="@/static/image/background-slide.png" alt="" />
-        <img
-          class="absolute top-1/4 transform -translate-y-12 left-6"
-          src="@/static/image/slide-2.png"
-          alt=""
-        />
-        <img
-          class="absolute bottom-24 left-28"
-          src="@/static/image/customer-3.png"
-          alt=""
-        />
-      </div>
-       <div class="relative w-338">
         <img src="@/static/image/background-slide.png" alt="" />
         <img
           class="absolute top-1/4 transform -translate-y-12 left-6"
@@ -70,7 +61,7 @@
         </svg>
       </button>
     </div>
-     <div
+    <div
       class="flex items-center justify-center absolute bottom-10 left-24 transform translate-x-4"
       v-show="blue"
     >
@@ -117,6 +108,22 @@ export default {
   components: {
     VueSlickCarousel,
   },
+  props: {
+    orange: {
+      type:Boolean,
+      require:true,
+      default () {
+        return true
+      }
+    },
+       blue: {
+      type:Boolean,
+      require:true,
+      default () {
+        return false
+      }
+    },
+  },
   data() {
     return {
       setting: {
@@ -129,6 +136,7 @@ export default {
         dotsClass: "hidden",
         arrows: false,
         centerPadding: "10px",
+        fade:true,
         responsive: [
           {
             breakpoint: 480,
@@ -162,8 +170,7 @@ export default {
           customer: "/image/customer-3.png",
         },
       ],
-      orange:true,
-      blue: false,
+      
     };
   },
   methods: {
