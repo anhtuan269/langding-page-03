@@ -1,5 +1,5 @@
 <template>
-  <div class="media py-16 text-center xl:px-10  xl:pb-32">
+  <div class="media py-16 text-center xl:px-20  xl:pb-32">
     <div class="title">
       <p class="text-12">
         <span class="text-12 text-new-blue">RƏQƏMSAL</span>
